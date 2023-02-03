@@ -6,6 +6,19 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField, Range(1, 100)] private float speed;
 
+    public static PlayerMovement Instance => instance;
+
+    private static PlayerMovement instance;
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) Destroy(gameObject);
+        else
+        {
+            instance = this;
+        }
+    }
+    
     // Update is called once per frame
     void Update()
     {

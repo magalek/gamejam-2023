@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
     private static CameraController instance;
 
-    private Camera cameraRef;
+    public Camera cameraRef;
 
     private Coroutine zoomCoroutine;
     

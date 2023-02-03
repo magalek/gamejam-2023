@@ -1,18 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Interfaces;
-using UnityEngine;
 
-public class Turret : InteractableMonoBehaviour
+public class Turret : InteractableMonoBehaviourBase
 {
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -21,20 +12,9 @@ public class Turret : InteractableMonoBehaviour
 
     public override void Interact()
     {
-        if (isUsed) CameraController.Instance.ZoomIn();
+        if (IsUsed) CameraController.Instance.ZoomIn();
         else CameraController.Instance.ZoomOut();
-
-
+        
         base.Interact();
-    }
-}
-
-public abstract class InteractableMonoBehaviour : MonoBehaviour, IInteractable
-{
-    protected bool isUsed;
-    
-    public virtual void Interact()
-    {
-        isUsed = !isUsed;
     }
 }
