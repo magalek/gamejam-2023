@@ -1,10 +1,9 @@
-﻿using Unity.Mathematics;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Serialization;
 
 public class TurretMovement : MonoBehaviour
 {
-    public Vector3 Direction;
+    [FormerlySerializedAs("TurretForwardDirection")] [FormerlySerializedAs("TurretForward")] [FormerlySerializedAs("Direction")] public Vector3 TurretDirection;
     
     private Turret turret;
 
@@ -27,16 +26,16 @@ public class TurretMovement : MonoBehaviour
     private void CalculateDirection()
     {
         var mousePositionWorldSpace = cameraController.cameraRef.ScreenToWorldPoint(Input.mousePosition);
-        Direction = mousePositionWorldSpace - playerController.transform.position;
-        Direction.z = 0;
-        Direction.Normalize();
+        TurretDirection = mousePositionWorldSpace - playerController.transform.position;
+        TurretDirection.z = 0;
+        TurretDirection.Normalize();
     }
 
     private void Rotate()
     {
         var playerPosition = playerController.transform.position;
-        Debug.DrawLine(playerPosition, playerPosition + Direction, Color.red);
+        Debug.DrawLine(playerPosition, playerPosition + TurretDirection, Color.red);
 
-        transform.rotation = Quaternion.FromToRotation(Vector3.up, Direction);
+        transform.rotation = Quaternion.FromToRotation(Vector3.up, TurretDirection);
     }
 }

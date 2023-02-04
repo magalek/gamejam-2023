@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Interfaces;
 using UnityEngine;
 
@@ -13,7 +10,7 @@ public class Turret : InteractableMonoBehaviourBase
     private void Awake()
     {
         movement = GetComponent<TurretMovement>();
-        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer = GetComponentInChildren<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -24,9 +21,19 @@ public class Turret : InteractableMonoBehaviourBase
     
     public override InteractionResult Interact()
     {
+        if (!IsUsed)
+        {
+            if (!EquipmentController.Instance.CurrentItem) return InteractionResult.Default;
+            EquipmentController.Instance.PutDownItem();
+        }
+        
+        
         base.Interact();
         if (!IsUsed) CameraController.Instance.ZoomIn();
-        else CameraController.Instance.ZoomOut();
+        else
+        {
+            CameraController.Instance.ZoomOut();
+        }
 
         lineRenderer.enabled = IsUsed;
         return new InteractionResult(IsUsed);
@@ -37,6 +44,6 @@ public class Turret : InteractableMonoBehaviourBase
         if (!IsUsed) return;
         var position = transform.position;
         lineRenderer.SetPosition(0, position);
-        lineRenderer.SetPosition(1, position + (movement.Direction * 30));
+        lineRenderer.SetPosition(1, position + (movement.TurretDirection * 60));
     }
 }

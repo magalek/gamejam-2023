@@ -12,6 +12,6 @@ public abstract class InteractableMonoBehaviourBase : MonoBehaviour, IInteractab
     {
         IsUsed = !IsUsed;
         InteractionStateChanged?.Invoke(IsUsed);
-        return new InteractionResult(false);
+        return InteractionResult.Default;
     }
 }
