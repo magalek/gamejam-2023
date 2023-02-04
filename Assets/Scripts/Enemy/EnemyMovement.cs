@@ -9,13 +9,18 @@ public class EnemyMovement : MonoBehaviour, IMovement
 
     private Vector2 destination;
     private ISpawner spawner;
+    private Enemy enemy;
     
-    private Queue<Vector2> routeNodesPartial = new();
     private Queue<Vector2> routeNodes = new();
 
     private Vector2 currentNode;
 
     private bool canMove;
+
+    private void Awake()
+    {
+        enemy = GetComponent<Enemy>();
+    }
 
     public void Initialize(Vector2 _destination, ISpawner _spawner)
     {
@@ -24,6 +29,8 @@ public class EnemyMovement : MonoBehaviour, IMovement
 
         CalculateRoute(destination, spawner.Position, routeNodes);
 
+        
+        
         currentNode = routeNodes.Dequeue();
         canMove = currentNode != null;
     }
@@ -38,7 +45,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
         var distance = Vector2.Distance(transform.position, currentNode);
         if (distance > 0.01f) 
         {
-            var add = direction * Time.deltaTime;
+            var add = direction * Time.deltaTime * enemy.EnemyAsset.movementSpeed;
             transform.position += add;
             transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
             //transform.up = direction;
