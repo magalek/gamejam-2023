@@ -33,9 +33,6 @@ public class TurretMovement : MonoBehaviour
 
     private void Rotate()
     {
-        var playerPosition = playerController.transform.position;
-        Debug.DrawLine(playerPosition, playerPosition + TurretDirection, Color.red);
-
         transform.rotation = Quaternion.FromToRotation(Vector3.up, TurretDirection);
     }
 }

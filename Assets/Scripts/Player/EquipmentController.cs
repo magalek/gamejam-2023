@@ -10,8 +10,6 @@ public class EquipmentController : MonoBehaviour
     
     public Item CurrentItem { get; private set; }
 
-    public bool Has(Item item) => CurrentItem.itemType == item.itemType;
-
     public bool Has<T>() where T : Item => CurrentItem is T;
 
     private void Awake()
@@ -27,8 +25,6 @@ public class EquipmentController : MonoBehaviour
 
     public void PickUpItem(Item item)
     {
-        if (CurrentItem != null) return;
-
         CurrentItem = item;
         
         itemSpriteRenderer.sprite = CurrentItem.sprite;

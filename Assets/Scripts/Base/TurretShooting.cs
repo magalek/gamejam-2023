@@ -2,6 +2,7 @@
 using System;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum ShotStatus
 {
@@ -15,7 +16,11 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
     
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private float cooldown;
+    [SerializeField] private GameObject rangeSpriteGameObject;
 
+    [SerializeField, Range(1f, 50f)] private float shootingRange;
+
+    public float Range => shootingRange;
     public Vector2 ShotPoint => transform.position;
     public Vector2 ShotDirection => movement.TurretDirection;
     public Origin ShotOrigin => Origin.Player;
@@ -39,10 +44,13 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
         movement = GetComponent<TurretMovement>();
         turret = GetComponent<Turret>();
         turret.InteractionStateChanged += OnInteractionStateChanged;
+        rangeSpriteGameObject.transform.localScale = Vector3.one * shootingRange * 2;
+        rangeSpriteGameObject.SetActive(false);
     }
 
     private void OnInteractionStateChanged(bool isInteracting)
     {
+        rangeSpriteGameObject.SetActive(isInteracting);
         if (!isInteracting) return;
         currentProjectileItem = EquipmentController.Instance.CurrentItem as ProjectileItem;
         EquipmentController.Instance.PutDownItem();
@@ -62,7 +70,7 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
 
     private void Shoot()
     {
-        Projectile.Spawn(this, currentProjectileItem);
+        Projectile.Spawn(this, currentProjectileItem, shootingRange);
         shotsShot++;
         Shot?.Invoke(ShotStatus.Normal);
         particleChmurka.Play();

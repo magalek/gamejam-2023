@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class EnemyMovement : MonoBehaviour, IMovement
 {
+    public event Action EndedRoute;
+    
+    [SerializeField] private TargetingType targetingType;
+    
     private int divisionCount = 10;
 
     private Vector2 destination;
-    private ISpawner spawner;
+    private ITargetProvider targetProvider;
     private Enemy enemy;
     
     private Queue<Vector2> routeNodes = new();
@@ -20,16 +25,21 @@ public class EnemyMovement : MonoBehaviour, IMovement
     private void Awake()
     {
         enemy = GetComponent<Enemy>();
+        targetProvider = targetingType == TargetingType.Melee ? new MeleeTargetProvider() : new RangedTargetProvider();
     }
 
-    public void Initialize(Vector2 _destination, ISpawner _spawner)
+    public void Initialize(Vector2 _destination)
     {
         destination = _destination;
-        spawner = _spawner;
 
-        CalculateRoute(destination, spawner.Position, routeNodes);
+        CalculateRoute( transform.position, targetProvider.GetTarget(transform.position), routeNodes);
 
-        
+        for (int i = 0; i < routeNodes.Count; i++)
+        {
+            var route = routeNodes.Dequeue();
+            Debug.DrawLine(route, routeNodes.Peek(), Color.red, 10);
+            routeNodes.Enqueue(route);
+        }
         
         currentNode = routeNodes.Dequeue();
         canMove = currentNode != null;
@@ -55,6 +65,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
             if (routeNodes.Count == 0)
             {
                 canMove = false;
+                EndedRoute?.Invoke();
                 return;
             }
             currentNode = routeNodes.Dequeue();
