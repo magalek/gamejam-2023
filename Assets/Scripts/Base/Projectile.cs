@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
     private IProjectileShooter shooter;
     private ProjectileItem item;
 
+    private Vector2 direction;
+
     private bool isStarted;
 
     private float traveledDistance;
@@ -35,7 +37,7 @@ public class Projectile : MonoBehaviour
     private void Move()
     {
         if (!isStarted) return;
-        var movement = (Vector3)shooter.ShotDirection * (item.speed * Time.deltaTime);
+        var movement = (Vector3)direction * (item.speed * Time.deltaTime);
         transform.position += movement;
         traveledDistance += movement.magnitude;
     }
@@ -43,6 +45,7 @@ public class Projectile : MonoBehaviour
     private void Shoot(IProjectileShooter _shooter, ProjectileItem _item)
     {
         shooter = _shooter;
+        direction = shooter.ShotDirection;
         item = _item;
         isStarted = true;
     }

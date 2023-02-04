@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafbf9743778424dbe3deff79371d3b2, type: 3}
   m_Name: Bug 1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  sprite: {fileID: 21300000, guid: a56c45348ee738a4a844ac86f1eaf10e, type: 3}
+  prefab: {fileID: 5461952347297505309, guid: 104349820eb0a0d42943b633bb3fd85c, type: 3}
+  health: 100
+  movementSpeed: 3
