@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7676cfc00664d4b82bbc4975a0b2e69, type: 3}
-  m_Name: Mirabelle
+  m_Script: {fileID: 11500000, guid: 777a61c2b22b4838b4f1f1783895bab6, type: 3}
+  m_Name: Pumpkin
   m_EditorClassIdentifier: 
   itemType: 0
-  sprite: {fileID: 21300000, guid: 754bd55273e1aea4a8864ca407998e52, type: 3}
+  sprite: {fileID: 21300000, guid: 9bc2261d6e868754fb948011f814145a, type: 3}
+  prefab: {fileID: 0}
+  speed: 10
+  cooldown: 0.2
+  damage: 10

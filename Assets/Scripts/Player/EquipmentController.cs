@@ -10,7 +10,9 @@ public class EquipmentController : MonoBehaviour
     
     public Item CurrentItem { get; private set; }
 
-    public bool HasItem(Item item) => CurrentItem.itemType == item.itemType;
+    public bool Has(Item item) => CurrentItem.itemType == item.itemType;
+
+    public bool Has<T>() where T : Item => CurrentItem is T;
 
     private void Awake()
     {

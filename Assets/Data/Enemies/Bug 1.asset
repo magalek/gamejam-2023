@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7676cfc00664d4b82bbc4975a0b2e69, type: 3}
-  m_Name: Pumpkin
+  m_Script: {fileID: 11500000, guid: bafbf9743778424dbe3deff79371d3b2, type: 3}
+  m_Name: Bug 1
   m_EditorClassIdentifier: 
-  itemType: 0
-  sprite: {fileID: 21300000, guid: 9bc2261d6e868754fb948011f814145a, type: 3}
+  sprite: {fileID: 0}
+  prefab: {fileID: 0}
