@@ -30,9 +30,12 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
     private int shotsShot;
 
     private bool CanShoot() => shotsShot < currentProjectileItem.shootsAmount;
+
+    private ParticleSystem particleChmurka;
     
     private void Awake()
     {
+        particleChmurka = GetComponent<ParticleSystem>();
         movement = GetComponent<TurretMovement>();
         turret = GetComponent<Turret>();
         turret.InteractionStateChanged += OnInteractionStateChanged;
@@ -62,5 +65,6 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
         Projectile.Spawn(this, currentProjectileItem);
         shotsShot++;
         Shot?.Invoke(ShotStatus.Normal);
+        particleChmurka.Play();
     }
 }
