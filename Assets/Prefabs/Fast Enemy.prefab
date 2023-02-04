@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4908954331637565438}
   - component: {fileID: 5543021530283921898}
+  - component: {fileID: 4126013231011642870}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4126013231011642870
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154098653436162233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 727f0eb65e51ea745a56f0e6bb89e422, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5979622671082134874
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a26933310ce4121acf395fa2b7d0a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyAsset: {fileID: 11400000, guid: 6adf57279dd2428488f093fd23935865, type: 2}
 --- !u!114 &5878228764464596054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870e9c30721e43fa95473a4de75c90ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetingType: 0
 --- !u!70 &4710456869810501936
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

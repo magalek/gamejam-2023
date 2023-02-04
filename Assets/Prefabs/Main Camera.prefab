@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34738cbee9a43638d091b487f5384da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomRange: {x: 8, y: 16}
+  zoomRange: {x: 8, y: 20}
   zoomTime: 0.5
   followSpeed: 0.03
   cameraRef: {fileID: 0}
