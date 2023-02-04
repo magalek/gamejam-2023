@@ -1054,6 +1054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138534002}
   - component: {fileID: 138534003}
+  - component: {fileID: 138534004}
   m_Layer: 0
   m_Name: rzekakolanko (31)
   m_TagString: Untagged
@@ -1128,6 +1129,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &138534004
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138534001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.9528192, y: -0.24431252}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8306625, y: 1.511375}
+  m_EdgeRadius: 0
 --- !u!1 &148412129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174071941}
   - component: {fileID: 174071942}
+  - component: {fileID: 174071943}
   m_Layer: 0
   m_Name: rzekakolanko (24)
   m_TagString: Untagged
@@ -1296,6 +1324,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &174071943
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174071940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.91061985}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.93283}
+  m_EdgeRadius: 0
 --- !u!1 &178838591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 329594053}
   - component: {fileID: 329594054}
+  - component: {fileID: 329594055}
   m_Layer: 0
   m_Name: rzekakolanko (6)
   m_TagString: Untagged
@@ -2517,6 +2572,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &329594055
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329594052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.8344855, y: -0.17835283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.668971, y: 1.6432943}
+  m_EdgeRadius: 0
 --- !u!1 &335919044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +2860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363210302}
   - component: {fileID: 363210303}
+  - component: {fileID: 363210304}
   m_Layer: 0
   m_Name: rzekakolanko (1)
   m_TagString: Untagged
@@ -2853,6 +2935,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &363210304
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363210301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.30574748, y: -0.3312267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.388505, y: 1.3375466}
+  m_EdgeRadius: 0
 --- !u!1 &363398895
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,6 +3952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 479577864}
   - component: {fileID: 479577863}
+  - component: {fileID: 479577865}
   m_Layer: 0
   m_Name: rzeczkasrodek2 (1)
   m_TagString: Untagged
@@ -3911,13 +4020,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479577862}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.59, y: 5.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 13.59, y: 5.1956, z: 0}
+  m_LocalScale: {x: 1.0244, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1961226108}
   m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!61 &479577865
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479577862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0732193, y: -0.17101926}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.156471, y: 1.6579615}
+  m_EdgeRadius: 0
 --- !u!1 &496027552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,6 +4147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505092625}
   - component: {fileID: 505092626}
+  - component: {fileID: 505092627}
   m_Layer: 0
   m_Name: rzekakolanko (11)
   m_TagString: Untagged
@@ -4086,6 +4222,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &505092627
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505092624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.0065176, y: -0.1783526}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.993876, y: 1.6432948}
+  m_EdgeRadius: 0
 --- !u!1 &505528990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,6 +4846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570247776}
   - component: {fileID: 570247777}
+  - component: {fileID: 570247778}
   m_Layer: 0
   m_Name: rzekakolanko (18)
   m_TagString: Untagged
@@ -4758,6 +4921,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &570247778
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570247775}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.6051753, y: 0.17835283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.2103505, y: 1.6432943}
+  m_EdgeRadius: 0
 --- !u!1 &582167417
 GameObject:
   m_ObjectHideFlags: 0
@@ -80655,6 +80844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806103160}
   - component: {fileID: 806103159}
+  - component: {fileID: 806103161}
   m_Layer: 0
   m_Name: rzekakolanko (28)
   m_TagString: Untagged
@@ -80729,6 +80919,32 @@ Transform:
   m_Father: {fileID: 1961226108}
   m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!61 &806103161
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806103158}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.91724336, y: -0.28026915}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1210744, y: 1.4394617}
+  m_EdgeRadius: 0
 --- !u!1 &826013993
 GameObject:
   m_ObjectHideFlags: 0
@@ -80823,6 +81039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850887621}
   - component: {fileID: 850887622}
+  - component: {fileID: 850887623}
   m_Layer: 0
   m_Name: rzekakolanko (10)
   m_TagString: Untagged
@@ -80897,6 +81114,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &850887623
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850887620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0926511, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8146977, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &853980451
 GameObject:
   m_ObjectHideFlags: 0
@@ -80907,6 +81150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853980452}
   - component: {fileID: 853980453}
+  - component: {fileID: 853980454}
   m_Layer: 0
   m_Name: rzekakolanko (17)
   m_TagString: Untagged
@@ -80981,6 +81225,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &853980454
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853980451}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17835271, y: -1.1210747}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6432946, y: 2.7134113}
+  m_EdgeRadius: 0
 --- !u!1 &862514361
 GameObject:
   m_ObjectHideFlags: 0
@@ -81159,6 +81429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870113726}
   - component: {fileID: 870113727}
+  - component: {fileID: 870113728}
   m_Layer: 0
   m_Name: rzekasrodek1 (14)
   m_TagString: Untagged
@@ -81233,6 +81504,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &870113728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870113725}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.611694, y: -0.17835283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11.223386, y: 1.6432943}
+  m_EdgeRadius: 0
 --- !u!1 &881764234
 GameObject:
   m_ObjectHideFlags: 0
@@ -82957,6 +83254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918198447}
   - component: {fileID: 918198448}
+  - component: {fileID: 918198449}
   m_Layer: 0
   m_Name: rzekakolanko (34)
   m_TagString: Untagged
@@ -83031,6 +83329,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &918198449
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918198446}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12739491, y: -2.7007706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7452102, y: 7.4015403}
+  m_EdgeRadius: 0
 --- !u!1 &919311327
 GameObject:
   m_ObjectHideFlags: 0
@@ -83182,6 +83506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932425097}
   - component: {fileID: 932425098}
+  - component: {fileID: 932425099}
   m_Layer: 0
   m_Name: rzeczkasrodek2 (2)
   m_TagString: Untagged
@@ -83256,6 +83581,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &932425099
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932425096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.6306539, y: 0.17835346}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.2613087, y: 1.6432931}
+  m_EdgeRadius: 0
 --- !u!1 &940600016
 GameObject:
   m_ObjectHideFlags: 0
@@ -83518,6 +83869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974961545}
   - component: {fileID: 974961546}
+  - component: {fileID: 974961547}
   m_Layer: 0
   m_Name: rzeczkasrodek4 (5)
   m_TagString: Untagged
@@ -83592,6 +83944,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &974961547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974961544}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.2699447, y: 0.18530154}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.5398893, y: 1.6293969}
+  m_EdgeRadius: 0
 --- !u!1 &984327147
 GameObject:
   m_ObjectHideFlags: 0
@@ -83938,6 +84316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032782909}
   - component: {fileID: 1032782910}
+  - component: {fileID: 1032782911}
   m_Layer: 0
   m_Name: rzekakolanko (36)
   m_TagString: Untagged
@@ -84012,6 +84391,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1032782911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032782908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.1465535, y: -0.12739474}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0701165, y: 1.3375474}
+  m_EdgeRadius: 0
 --- !u!1 &1054113946
 GameObject:
   m_ObjectHideFlags: 0
@@ -84190,6 +84595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067600654}
   - component: {fileID: 1067600655}
+  - component: {fileID: 1067600656}
   m_Layer: 0
   m_Name: rzekakolanko (29)
   m_TagString: Untagged
@@ -84264,6 +84670,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1067600656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067600653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.0016806, y: -0.26874375}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.123838, y: 1.4625125}
+  m_EdgeRadius: 0
 --- !u!1 &1080274679
 GameObject:
   m_ObjectHideFlags: 0
@@ -84809,6 +85241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150068850}
   - component: {fileID: 1150068851}
+  - component: {fileID: 1150068852}
   m_Layer: 0
   m_Name: rzekat (3)
   m_TagString: Untagged
@@ -84883,6 +85316,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1150068852
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150068849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.6253927, y: -0.046325326}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2507854, y: 1.2587941}
+  m_EdgeRadius: 0
 --- !u!1 &1152512277
 GameObject:
   m_ObjectHideFlags: 0
@@ -85144,6 +85603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175868559}
   - component: {fileID: 1175868560}
+  - component: {fileID: 1175868561}
   m_Layer: 0
   m_Name: rzekasrodek1 (9)
   m_TagString: Untagged
@@ -85218,6 +85678,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1175868561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175868558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.6306539, y: 0.17835283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.2613077, y: 1.6432943}
+  m_EdgeRadius: 0
 --- !u!1 &1176119606
 GameObject:
   m_ObjectHideFlags: 0
@@ -86209,6 +86695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274187807}
   - component: {fileID: 1274187808}
+  - component: {fileID: 1274187809}
   m_Layer: 0
   m_Name: rzekakolanko (3)
   m_TagString: Untagged
@@ -86283,6 +86770,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1274187809
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274187806}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16213846, y: -3.42808}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6757231, y: 8.856159}
+  m_EdgeRadius: 0
 --- !u!1 &1298494287
 GameObject:
   m_ObjectHideFlags: 0
@@ -86461,6 +86974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337283980}
   - component: {fileID: 1337283981}
+  - component: {fileID: 1337283982}
   m_Layer: 0
   m_Name: rzekakolanko (14)
   m_TagString: Untagged
@@ -86535,6 +87049,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1337283982
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.9936788, y: -0.30574766}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.7643685, y: 1.3885047}
+  m_EdgeRadius: 0
 --- !u!1 &1340059714
 GameObject:
   m_ObjectHideFlags: 0
@@ -86797,6 +87337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359330998}
   - component: {fileID: 1359330999}
+  - component: {fileID: 1359331000}
   m_Layer: 0
   m_Name: rzekakolanko (16)
   m_TagString: Untagged
@@ -86871,6 +87412,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1359331000
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359330997}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.12739468, y: -0.33122683}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7452106, y: 1.3375463}
+  m_EdgeRadius: 0
 --- !u!1 &1363246291
 GameObject:
   m_ObjectHideFlags: 0
@@ -87154,6 +87721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378169477}
   - component: {fileID: 1378169478}
+  - component: {fileID: 1378169479}
   m_Layer: 0
   m_Name: rzeczkasrodek2 (7)
   m_TagString: Untagged
@@ -87228,6 +87796,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1378169479
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378169476}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7643695, y: -0.17835307}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.528739, y: 1.1337142}
+  m_EdgeRadius: 0
 --- !u!1 &1380507773
 GameObject:
   m_ObjectHideFlags: 0
@@ -88046,6 +88640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467475747}
   - component: {fileID: 1467475748}
+  - component: {fileID: 1467475749}
   m_Layer: 0
   m_Name: rzeczkasrodek4 (2)
   m_TagString: Untagged
@@ -88120,6 +88715,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1467475749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467475746}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.8536446, y: -0.25478983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.707289, y: 1.4904203}
+  m_EdgeRadius: 0
 --- !u!1 &1495746441
 GameObject:
   m_ObjectHideFlags: 0
@@ -88943,6 +89564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621211715}
   - component: {fileID: 1621211716}
+  - component: {fileID: 1621211717}
   m_Layer: 0
   m_Name: rzekakolanko (32)
   m_TagString: Untagged
@@ -89017,6 +89639,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1621211717
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621211714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2484691, y: 0.17835283}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.496939, y: 1.6432943}
+  m_EdgeRadius: 0
 --- !u!1 &1625364422
 GameObject:
   m_ObjectHideFlags: 0
@@ -90176,6 +90824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1798396617}
   - component: {fileID: 1798396618}
+  - component: {fileID: 1798396619}
   m_Layer: 0
   m_Name: rzekakoniec (5)
   m_TagString: Untagged
@@ -90250,6 +90899,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1798396619
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798396616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.050958514, y: 0.05095792}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.898083, y: 1.4904208}
+  m_EdgeRadius: 0
 --- !u!1 &1808152625
 GameObject:
   m_ObjectHideFlags: 0
@@ -91100,6 +91775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1894057378}
   - component: {fileID: 1894057379}
+  - component: {fileID: 1894057380}
   m_Layer: 0
   m_Name: rzekakolanko (26)
   m_TagString: Untagged
@@ -91174,6 +91850,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1894057380
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894057377}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.9090023, y: -0.26874387}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.818003, y: 1.4625123}
+  m_EdgeRadius: 0
 --- !u!1 &1897281619
 GameObject:
   m_ObjectHideFlags: 0
@@ -91520,6 +92222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915378820}
   - component: {fileID: 1915378821}
+  - component: {fileID: 1915378822}
   m_Layer: 0
   m_Name: rzekakoniec (3)
   m_TagString: Untagged
@@ -91594,6 +92297,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1915378822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915378819}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.22931081, y: -0.101916194}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5413784, y: 1.3885057}
+  m_EdgeRadius: 0
 --- !u!1 &1921021498
 GameObject:
   m_ObjectHideFlags: 0
