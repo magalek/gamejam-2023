@@ -1,5 +1,4 @@
-﻿using Unity.Mathematics;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TurretShooting : MonoBehaviour
 {
@@ -29,7 +28,7 @@ public class TurretShooting : MonoBehaviour
 
     private void Shoot()
     {
-        Projectile projectile = Instantiate(projectilePrefab, transform.position, quaternion.identity);
+        Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         projectile.Shoot(movement.TurretDirection);
         elapsedTime = 0;
     }
