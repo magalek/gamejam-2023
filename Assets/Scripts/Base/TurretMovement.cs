@@ -3,7 +3,7 @@ using UnityEngine.Serialization;
 
 public class TurretMovement : MonoBehaviour
 {
-    [FormerlySerializedAs("TurretForwardDirection")] [FormerlySerializedAs("TurretForward")] [FormerlySerializedAs("Direction")] public Vector3 TurretDirection;
+    public Vector3 TurretDirection;
     
     private Turret turret;
 

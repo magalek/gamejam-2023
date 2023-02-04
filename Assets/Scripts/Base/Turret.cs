@@ -21,13 +21,11 @@ public class Turret : InteractableMonoBehaviourBase
     
     public override InteractionResult Interact()
     {
-        if (!IsUsed)
+        if (!IsUsed && !EquipmentController.Instance.Has<ProjectileItem>())
         {
-            if (!EquipmentController.Instance.CurrentItem) return InteractionResult.Default;
-            EquipmentController.Instance.PutDownItem();
+            return InteractionResult.Default;
         }
-        
-        
+
         base.Interact();
         if (!IsUsed) CameraController.Instance.ZoomIn();
         else

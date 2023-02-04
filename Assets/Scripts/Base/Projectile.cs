@@ -1,23 +1,49 @@
-﻿using UnityEngine;
+﻿using System;
+using Unity.Mathematics;
+using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    private IProjectileShooter shooter;
+    private ProjectileItem item;
 
-    private Vector2 direction;
+    private bool isStarted;
 
     private float traveledDistance;
 
+    public static Projectile Spawn(IProjectileShooter shooter, ProjectileItem item)
+    {
+        Projectile projectile = Instantiate(item.prefab, shooter.ShotPoint, quaternion.identity);
+        projectile.Shoot(shooter, item);
+        return projectile;
+    }
+    
     private void Update()
     {
-        var movement = (Vector3)direction * (speed * Time.deltaTime);
-        transform.position += movement;
-        traveledDistance += movement.magnitude;
+        Move();
         if (traveledDistance > 100) Destroy(gameObject);
     }
 
-    public void Shoot(Vector2 _direction)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        direction = _direction;
+        if (other.TryGetComponent(out IHittable hittable))
+        {
+            hittable.TryHit(item.damage, shooter.ShotOrigin);
+        }
+    }
+
+    private void Move()
+    {
+        if (!isStarted) return;
+        var movement = (Vector3)shooter.ShotDirection * (item.speed * Time.deltaTime);
+        transform.position += movement;
+        traveledDistance += movement.magnitude;
+    }
+
+    private void Shoot(IProjectileShooter _shooter, ProjectileItem _item)
+    {
+        shooter = _shooter;
+        item = _item;
+        isStarted = true;
     }
 }

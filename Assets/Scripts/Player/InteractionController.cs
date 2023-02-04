@@ -30,10 +30,11 @@ public class InteractionController : MonoBehaviour
         FindInteractable();
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
-            var result = currentInteractable.Interact();
-            Interacted?.Invoke(result);
+            CallInteractedEvent(currentInteractable.Interact());
         }
     }
+    
+    public void CallInteractedEvent(InteractionResult result) => Interacted?.Invoke(result);
 
     private void FindInteractable()
     {

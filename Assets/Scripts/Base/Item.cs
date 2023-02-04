@@ -9,7 +9,5 @@ public class Item : ScriptableObject
 
 public enum ItemType
 {
-    Pumpkin,
-    Mirabelle,
-    Hazelnut
+    Projectile
 }
