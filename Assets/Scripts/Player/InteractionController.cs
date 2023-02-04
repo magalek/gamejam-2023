@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class InteractionController : MonoBehaviour
 {
+    public event Action<InteractionResult> Interacted;
+    
     [SerializeField] private float interactionRange;
+    
+    public static InteractionController Instance => instance;
+
+    private static InteractionController instance;
     
     private Collider2D[] collidersBuffer = new Collider2D[10];
 
     private IInteractable currentInteractable;
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) Destroy(gameObject);
+        else
+        {
+            instance = this;
+        }
+    }
     
     private void Update()
     {
         FindInteractable();
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
-            currentInteractable.Interact();
+            var result = currentInteractable.Interact();
+            Interacted?.Invoke(result);
         }
     }
 

@@ -2,6 +2,16 @@
 {
     public interface IInteractable
     {
-        void Interact();
+        InteractionResult Interact();
+    }
+
+    public struct InteractionResult
+    {
+        public bool LocksMovement;
+
+        public InteractionResult(bool locksMovement)
+        {
+            LocksMovement = locksMovement;
+        }
     }
 }

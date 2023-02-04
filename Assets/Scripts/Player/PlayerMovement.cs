@@ -1,24 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interfaces;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public event Action<Vector2> Moved;
+    
     [SerializeField, Range(1, 100)] private float speed;
 
-    public static PlayerMovement Instance => instance;
+    private InteractionController interactionController;
 
-    private static PlayerMovement instance;
+    private bool lockedMovement;
     
-    private void Awake()
+    private void Start()
     {
-        if (Instance != null && Instance != this) Destroy(gameObject);
-        else
-        {
-            instance = this;
-        }
+        interactionController = InteractionController.Instance;
+        interactionController.Interacted += OnInteracted;
     }
-    
+
+    private void OnInteracted(InteractionResult result)
+    {
+        lockedMovement = result.LocksMovement;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -27,8 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        if (lockedMovement) return;
         Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
         transform.position += (Vector3)(movement * (speed * Time.deltaTime));
+        if (movement.magnitude > 0) Moved?.Invoke(movement);
     }
 }

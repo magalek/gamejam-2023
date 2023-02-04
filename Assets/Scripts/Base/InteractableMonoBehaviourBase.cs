@@ -8,9 +8,10 @@ public abstract class InteractableMonoBehaviourBase : MonoBehaviour, IInteractab
     
     public bool IsUsed;
     
-    public virtual void Interact()
+    public virtual InteractionResult Interact()
     {
         IsUsed = !IsUsed;
         InteractionStateChanged?.Invoke(IsUsed);
+        return new InteractionResult(false);
     }
 }
