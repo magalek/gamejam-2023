@@ -29,6 +29,8 @@ public interface IHittable
 public class Enemy : MonoBehaviour, IHittable
 {
     public float Health { get; set; }
+
+    public EnemyAsset EnemyAsset;
     
     private IMovement movement;
 
@@ -37,6 +39,7 @@ public class Enemy : MonoBehaviour, IHittable
         Enemy enemy = Instantiate(enemyAsset.prefab, spawner.Position, Quaternion.identity);
         enemy.movement.Initialize(Vector3.zero, spawner);
         enemy.Health = enemyAsset.health;
+        enemy.EnemyAsset = enemyAsset;
         return enemy;
     }
 

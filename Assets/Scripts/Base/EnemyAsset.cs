@@ -10,4 +10,5 @@ public class EnemyAsset : ScriptableObject
     public Sprite sprite;
     public Enemy prefab;
     public float health;
+    public float movementSpeed;
 }
