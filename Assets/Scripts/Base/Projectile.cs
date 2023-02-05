@@ -2,8 +2,18 @@
 using Unity.Mathematics;
 using UnityEngine;
 
+public enum AttackType
+{
+    Pumpkin,
+    Mirabelle,
+    EnemyMelee,
+    EnemyRanged
+}
+
 public class Projectile : MonoBehaviour
 {
+    public AttackType type;
+    
     private IProjectileShooter shooter;
 
     private float damage;
@@ -40,7 +50,7 @@ public class Projectile : MonoBehaviour
     {
         if (other.TryGetComponent(out IHittable hittable))
         {
-            hittable.TryHit(damage, shooter.ShotOrigin, out bool hit);
+            hittable.TryHit(damage, shooter.ShotOrigin, type, out bool hit);
             if (hit) Destroy(gameObject);
         }
     }
