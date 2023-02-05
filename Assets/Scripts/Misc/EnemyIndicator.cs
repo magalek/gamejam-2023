@@ -25,7 +25,7 @@ namespace Misc
 
         private void Awake()
         {
-            renderer = GetComponent<SpriteRenderer>();
+            renderer = GetComponentInChildren<SpriteRenderer>();
             initialPosition = transform.position;
         }
 
