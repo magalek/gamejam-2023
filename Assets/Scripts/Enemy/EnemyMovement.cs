@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
     public event Action EndedRoute;
     
     [SerializeField] private TargetingType targetingType;
+    [SerializeField] private AudioSource roachwalkSoundEffect;
     
     private int divisionCount = 10;
 
