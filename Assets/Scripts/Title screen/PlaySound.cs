@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private AudioSource biedronka;
+
+    private void Start()
     {
-        
+        biedronka = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayBiedronkaSound()
     {
-        
+        biedronka.Play();
     }
 }
