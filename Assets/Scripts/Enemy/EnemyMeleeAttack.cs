@@ -30,7 +30,7 @@ public class EnemyMeleeAttack : EnemyAttack
                 var currentCollider = collidersBuffer[i];
                 if (currentCollider.TryGetComponent(out IHittable hittable))
                 {
-                    hittable.TryHit(damage, Origin.Enemy, out _);
+                    hittable.TryHit(damage, Origin.Enemy, AttackType.EnemyMelee, out _);
                 }
             }
         }

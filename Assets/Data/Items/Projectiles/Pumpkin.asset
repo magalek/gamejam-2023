@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777a61c2b22b4838b4f1f1783895bab6, type: 3}
   m_Name: Pumpkin
   m_EditorClassIdentifier: 
-  itemType: 0
   sprite: {fileID: 21300000, guid: 9bc2261d6e868754fb948011f814145a, type: 3}
   prefab: {fileID: 5585418013133086488, guid: 7b7dfe6829d5d4549a057caaea6037bf, type: 3}
   shootsAmount: 1
-  speed: 40
+  speed: 25
   cooldown: 0.5
   damage: 50
