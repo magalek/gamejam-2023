@@ -40,8 +40,8 @@ public class Projectile : MonoBehaviour
     {
         if (other.TryGetComponent(out IHittable hittable))
         {
-            hittable.TryHit(damage, shooter.ShotOrigin);
-            Destroy(gameObject);
+            hittable.TryHit(damage, shooter.ShotOrigin, out bool hit);
+            if (hit) Destroy(gameObject);
         }
     }
 

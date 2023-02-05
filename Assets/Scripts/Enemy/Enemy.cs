@@ -31,10 +31,12 @@ public class Enemy : MonoBehaviour, IHittable
         movement.Move();
     }
 
-    public void TryHit(float damage, Origin origin)
+    public void TryHit(float damage, Origin origin, out bool hit)
     {
+        hit = false;
         if (origin == Origin.Enemy) return;
 
+        hit = true;
         Health -= damage;
         if (Health <= 0) Kill();
     }

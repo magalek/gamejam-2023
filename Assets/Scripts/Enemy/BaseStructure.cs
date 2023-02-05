@@ -23,10 +23,12 @@ public class BaseStructure : MonoBehaviour, IHittable
         Health = maxHealth;
     }
 
-    public void TryHit(float damage, Origin origin)
+    public void TryHit(float damage, Origin origin, out bool hit)
     {
+        hit = false;
         if (origin == Origin.Player) return;
 
+        hit = true;
         Health -= damage;
         if (Health <= 0) Kill();
     }
@@ -34,6 +36,6 @@ public class BaseStructure : MonoBehaviour, IHittable
     public void Kill()
     {
         Destroyed?.Invoke();
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }
