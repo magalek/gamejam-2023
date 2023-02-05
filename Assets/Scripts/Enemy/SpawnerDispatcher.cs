@@ -53,7 +53,7 @@ public class SpawnerDispatcher : MonoBehaviour
     {
         while (gameObject.activeSelf)
         {
-            yield return new WaitForSeconds(currentLightDelay);
+            yield return new WaitForSeconds(Mathf.Clamp(currentLightDelay, 0, int.MaxValue));
             Enemy.Spawn(GetRandomSpawner(), lightEnemy);
             currentLightDelay -= lightDelayIncrement;
         }
@@ -63,7 +63,7 @@ public class SpawnerDispatcher : MonoBehaviour
     {
         while (gameObject.activeSelf)
         {
-            yield return new WaitForSeconds(currentHeavyDelay);
+            yield return new WaitForSeconds(Mathf.Clamp(currentHeavyDelay, 0, int.MaxValue));
             Enemy.Spawn(GetRandomSpawner(), heavyEnemy);
             currentHeavyDelay -= heavyDelayIncrement;
         }

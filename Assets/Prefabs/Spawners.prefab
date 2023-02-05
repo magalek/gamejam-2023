@@ -55,9 +55,9 @@ MonoBehaviour:
   lightEnemy: {fileID: 11400000, guid: 6adf57279dd2428488f093fd23935865, type: 2}
   heavyEnemy: {fileID: 11400000, guid: db24b25f4661848409053858c69d476a, type: 2}
   lightDelay: 8
-  heavyDelay: 30
-  lightDelayIncrement: 0.01
-  heavyDelayIncrement: 0.005
+  heavyDelay: 16
+  lightDelayIncrement: 0.1
+  heavyDelayIncrement: 0.3
 --- !u!1001 &275736195242151611
 PrefabInstance:
   m_ObjectHideFlags: 0
