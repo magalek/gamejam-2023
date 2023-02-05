@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4ac8399a85ae3784cb4db23a13885ac2, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 7c080af7b2d9d9e4eb761c8c4f5c61d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsUsed: 0
-  harvestedItem: {fileID: 11400000, guid: 65410185b65ffa449afe509b2ac6e245, type: 2}
+  harvestedItem: {fileID: 11400000, guid: 53670d59f55066d4c8656ac70057d4d4, type: 2}
   pickupSoundEffect: {fileID: 5553766651286969946}
 --- !u!82 &5553766651286969946
 AudioSource:
@@ -138,7 +138,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.5035343
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
