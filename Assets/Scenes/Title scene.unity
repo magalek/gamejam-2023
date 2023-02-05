@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -760,16 +760,16 @@ AudioSource:
   m_GameObject: {fileID: 407734990}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 81169276c6595f04789361c876b61d8d, type: 3}
+  OutputAudioMixerGroup: {fileID: -3150183482267509707, guid: b82373ebeaa9c80489d94123ce90afca, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 72b8bd6a99ca3a04ba11f5b8a074a60e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2261,7 +2261,7 @@ MonoBehaviour:
 
 
     Connect
-    the Flower of Life''s roots to a Rootcnnon or Healing Flower.
+    the Flower of Life''s roots to a Rootcannon or Healing Flower.
 
 
     Load ammo

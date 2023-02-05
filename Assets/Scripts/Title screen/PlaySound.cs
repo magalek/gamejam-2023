@@ -6,6 +6,8 @@ public class PlaySound : MonoBehaviour
 {
     private AudioSource biedronka;
 
+    private bool clicked;
+    
     private void Start()
     {
         biedronka = GetComponent<AudioSource>();
@@ -13,6 +15,8 @@ public class PlaySound : MonoBehaviour
 
     public void PlayBiedronkaSound()
     {
+        if (clicked) return;
+        clicked = true;
         biedronka.Play();
     }
 }
