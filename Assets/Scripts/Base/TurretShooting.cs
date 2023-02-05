@@ -17,6 +17,8 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private float cooldown;
     [SerializeField] private GameObject rangeSpriteGameObject;
+    [SerializeField] private AudioSource strzalSoundEffect;
+    [SerializeField] private AudioSource reloadSoundEffect;
 
     [SerializeField, Range(1f, 50f)] private float shootingRange;
 
@@ -61,8 +63,16 @@ public class TurretShooting : MonoBehaviour, IProjectileShooter
     {
         if (Input.GetMouseButton(0) && turret.IsUsed && elapsedTime > cooldown)
         {
-            if (CanShoot()) Shoot();
-            else Shot?.Invoke(ShotStatus.Empty);
+            if (CanShoot())
+            {
+                strzalSoundEffect.Play();
+                Shoot();
+            }
+            else
+            {
+                reloadSoundEffect.Play();
+                Shot?.Invoke(ShotStatus.Empty);
+            }
             elapsedTime = 0;
         }
         elapsedTime += Time.deltaTime;
