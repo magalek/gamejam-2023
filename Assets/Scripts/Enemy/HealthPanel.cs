@@ -27,7 +27,7 @@ public class HealthPanel : MonoBehaviour
                 var hit = hitPanel.fillAmount * 100;
                 var hp = imagePanel.fillAmount * 100;
                 
-                hitPanel.fillAmount -= Time.deltaTime / (10 - (hit - hp));
+                hitPanel.fillAmount -= Time.deltaTime / (10 - Mathf.Clamp((hit - hp), 0, 5));
                 yield return null;
             }
             yield return null;
