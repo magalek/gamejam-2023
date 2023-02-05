@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 754bd55273e1aea4a8864ca407998e52, type: 3}
   prefab: {fileID: 5585418013133086488, guid: 518bff959d3eea743bd3dcf91e57ff02, type: 3}
-  shootsAmount: 10
-  speed: 10
-  cooldown: 0.2
+  shootsAmount: 20
+  speed: 30
+  cooldown: 0.05
   damage: 10

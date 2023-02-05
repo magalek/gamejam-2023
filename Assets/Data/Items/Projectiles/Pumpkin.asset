@@ -17,4 +17,4 @@ MonoBehaviour:
   shootsAmount: 1
   speed: 25
   cooldown: 0.5
-  damage: 50
+  damage: 100
