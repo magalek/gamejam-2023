@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class BaseStructure : MonoBehaviour, IHittable
 {
+    public event Action<float> Hit;
     public event Action Destroyed;
     
     [SerializeField] private float maxHealth;
@@ -30,6 +31,7 @@ public class BaseStructure : MonoBehaviour, IHittable
 
         hit = true;
         Health -= damage;
+        Hit?.Invoke((float)Health/(float)maxHealth);
         if (Health <= 0) Kill();
     }
 

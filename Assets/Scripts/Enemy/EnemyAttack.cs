@@ -1,8 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public abstract class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] protected float damage;
-    
+    protected Enemy enemy;
+
+    private void Awake()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
     public abstract void Attack();
 }
