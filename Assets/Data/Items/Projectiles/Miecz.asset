@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777a61c2b22b4838b4f1f1783895bab6, type: 3}
+  m_Name: Miecz
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: d1248e26725384e45bbe6c0b691af4b6, type: 3}
+  prefab: {fileID: 5585418013133086488, guid: 518bff959d3eea743bd3dcf91e57ff02, type: 3}
+  shootsAmount: 10
+  speed: 10
+  cooldown: 0.2
+  damage: 10
