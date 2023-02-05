@@ -8,6 +8,7 @@ public class RootsController : MonoBehaviour
 {
     [SerializeField] private float rootCoroutineTime;
     [SerializeField] private int maxRoots;
+    [SerializeField] private AudioSource rootSoundEffect;
 
     public static RootsController Instance => instance;
 
@@ -30,12 +31,14 @@ public class RootsController : MonoBehaviour
         foreach (var root in roots)
         {
             root.Reset();
+            
         }
     }
     
     public void AttachRoot(Root root, IActivable attachPoint)
     {
         root.Show(rootCoroutineTime);
+        rootSoundEffect.Play();
         rootPairs.Enqueue((root, attachPoint));
         if (rootPairs.Count > maxRoots)
         {
@@ -43,6 +46,7 @@ public class RootsController : MonoBehaviour
             DetachRoot(pair.root);
             pair.activable.ChangeActivationState(false);
         }
+
     }
 
     public void DetachRoot(Root root)

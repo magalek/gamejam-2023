@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     
     public event Action<Vector2> Moved;
     public event Action StartedMoving;
-    public event Action StoppedMoving;
+    public event Action StoppedMoving; 
     
     [SerializeField, Range(1, 100)] private float speed;
 
@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     private InteractionController interactionController;
 
     private bool lockedMovement;
+
+    [SerializeField] private AudioSource chodzenieSoundEffect;
+
+    private Coroutine soundCoroutine;
 
     private void Start()
     {
@@ -47,13 +51,21 @@ public class PlayerMovement : MonoBehaviour
         if (movement.magnitude > 0)
         {
             rendererRef.flipX = movement.x > 0;
-            if (!IsMoving) StartedMoving?.Invoke();
+            if (!IsMoving)
+            {
+                StartedMoving?.Invoke();
+                chodzenieSoundEffect.Play();
+            }
             IsMoving = true;
             Moved?.Invoke(movement);
         }
         else
         {
-            if (IsMoving) StoppedMoving?.Invoke();
+            if (IsMoving)
+            {
+                StoppedMoving?.Invoke();
+                chodzenieSoundEffect.Stop();
+            }
             IsMoving = false;
         }
     }
