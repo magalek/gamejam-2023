@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsUsed: 0
-  harvestedItem: {fileID: 11400000, guid: 53670d59f55066d4c8656ac70057d4d4, type: 2}
+  harvestedItem: {fileID: 11400000, guid: 65410185b65ffa449afe509b2ac6e245, type: 2}
   pickupSoundEffect: {fileID: 5553766651286969946}
 --- !u!82 &5553766651286969946
 AudioSource:

@@ -2,6 +2,8 @@
 
 public class Enemy : MonoBehaviour, IHittable
 {
+    [SerializeField] private Projectile nonWorkingProjectile;
+    
     public float Health { get; set; }
 
     private EnemyAttack attack;
@@ -31,11 +33,13 @@ public class Enemy : MonoBehaviour, IHittable
         movement.Move();
     }
 
-    public void TryHit(float damage, Origin origin, out bool hit)
+    public void TryHit(float damage, Origin origin, AttackType type, out bool hit)
     {
         hit = false;
         if (origin == Origin.Enemy) return;
 
+        if (nonWorkingProjectile != null && nonWorkingProjectile.type == type) return;
+        Debug.Log("hit");
         hit = true;
         Health -= damage;
         if (Health <= 0) Kill();

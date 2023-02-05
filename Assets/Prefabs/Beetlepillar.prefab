@@ -413,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a26933310ce4121acf395fa2b7d0a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nonWorkingProjectile: {fileID: 5585418013133086488, guid: 518bff959d3eea743bd3dcf91e57ff02, type: 3}
   EnemyAsset: {fileID: 0}
 --- !u!114 &6812193622537783192
 MonoBehaviour:
@@ -427,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetingType: 1
+  roachwalkSoundEffect: {fileID: 0}
 --- !u!114 &7921290261119681363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc8213a6f8042b28f060e3481f9631b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
   castTime: 2
   projectileItem: {fileID: 11400000, guid: cc39e2b6672d23a4e8ac6c5480534f77, type: 2}
   atakSoundEffect: {fileID: -7766920692458930552}

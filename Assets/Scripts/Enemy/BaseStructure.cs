@@ -24,7 +24,7 @@ public class BaseStructure : MonoBehaviour, IHittable
         Health = maxHealth;
     }
 
-    public void TryHit(float damage, Origin origin, out bool hit)
+    public void TryHit(float damage, Origin origin, AttackType type, out bool hit)
     {
         hit = false;
         if (origin == Origin.Player) return;
