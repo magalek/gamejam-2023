@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour, IHittable
 
     public static Enemy Spawn(ISpawner spawner, EnemyAsset enemyAsset)
     {
-        Enemy enemy = Instantiate(enemyAsset.prefab, spawner.Position, Quaternion.identity);
+        Enemy enemy = Instantiate(enemyAsset.prefab, spawner.GetAreaPosition(), Quaternion.identity);
         enemy.movement.Initialize(Vector3.zero);
         enemy.Health = enemyAsset.health;
         enemy.EnemyAsset = enemyAsset;
