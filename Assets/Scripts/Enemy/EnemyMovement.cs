@@ -49,7 +49,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
         direction.Normalize();
 
         var distance = Vector2.Distance(transform.position, currentNode);
-        if (distance > 0.01f) 
+        if (distance > 0.1f) 
         {
             var add = direction * Time.deltaTime * enemy.EnemyAsset.movementSpeed;
             transform.position += add;
