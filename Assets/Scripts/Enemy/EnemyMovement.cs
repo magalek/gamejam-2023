@@ -61,7 +61,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
             if (routeNodes.Count == 0)
             {
                 canMove = false;
-                transform.rotation = Quaternion.FromToRotation(Vector3.up, (BaseStructure.Instance.transform.position - transform.position).normalized);
+                if (BaseStructure.Instance) transform.rotation = Quaternion.FromToRotation(Vector3.up, (BaseStructure.Instance.transform.position - transform.position).normalized);
                 EndedRoute?.Invoke();
                 return;
             }

@@ -21,6 +21,8 @@ public class CameraController : MonoBehaviour
     
     private Coroutine zoomCoroutine;
 
+    private bool zoomedOut;
+
     private float movementT;
     
     private void Awake()
@@ -38,6 +40,15 @@ public class CameraController : MonoBehaviour
     {
         playerMovement = PlayerController.Instance.Movement;
         playerMovement.Moved += OnMoved;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (zoomedOut) ZoomIn();
+            else ZoomOut();
+        }
     }
 
     private void LateUpdate()
@@ -59,9 +70,19 @@ public class CameraController : MonoBehaviour
         transform.position = smoothFollow;
     }
 
-    public void ZoomIn() => LerpZoomTo(zoomRange.x);
+    public void ZoomIn()
+    {
+        if (!zoomedOut) return;
+        LerpZoomTo(zoomRange.x);
+        zoomedOut = false;
+    }
 
-    public void ZoomOut() => LerpZoomTo(zoomRange.y);
+    public void ZoomOut()
+    {
+        if (zoomedOut) return;
+        LerpZoomTo(zoomRange.y);
+        zoomedOut = true;
+    }
 
     private void LerpZoomTo(float desiredZoom)
     {

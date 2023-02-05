@@ -15,4 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: a56c45348ee738a4a844ac86f1eaf10e, type: 3}
   prefab: {fileID: 5461952347297505309, guid: 104349820eb0a0d42943b633bb3fd85c, type: 3}
   health: 30
-  movementSpeed: 6
+  movementSpeed: 3
