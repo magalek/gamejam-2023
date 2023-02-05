@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BaseStructure : MonoBehaviour, IHittable
 {
@@ -38,6 +39,8 @@ public class BaseStructure : MonoBehaviour, IHittable
     public void Kill()
     {
         Destroyed?.Invoke();
+        var sceneBuildIndex = 2;
+        SceneManager.LoadScene(sceneBuildIndex);
         Destroy(transform.parent.gameObject);
     }
 }
