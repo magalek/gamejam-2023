@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -30,16 +31,10 @@ public class EnemyMovement : MonoBehaviour, IMovement
 
     public void Initialize(Vector2 _destination)
     {
-        destination = _destination;
+        destination = targetProvider.GetTarget(transform.position);
+        Debug.DrawLine(transform.position, destination, Color.yellow, 15);
 
-        CalculateRoute( transform.position, targetProvider.GetTarget(transform.position), routeNodes);
-
-        for (int i = 0; i < routeNodes.Count; i++)
-        {
-            var route = routeNodes.Dequeue();
-            Debug.DrawLine(route, routeNodes.Peek(), Color.red, 10);
-            routeNodes.Enqueue(route);
-        }
+        CalculateRoute(destination, transform.position, routeNodes);
         
         currentNode = routeNodes.Dequeue();
         canMove = currentNode != null;
@@ -65,6 +60,7 @@ public class EnemyMovement : MonoBehaviour, IMovement
             if (routeNodes.Count == 0)
             {
                 canMove = false;
+                transform.rotation = Quaternion.FromToRotation(Vector3.up, (BaseStructure.Instance.transform.position - transform.position).normalized);
                 EndedRoute?.Invoke();
                 return;
             }
@@ -84,9 +80,12 @@ public class EnemyMovement : MonoBehaviour, IMovement
         for (int i = 0; i < divisionCount; i++)
         {
             headPoint += (direction * pathPartLength);
-            
-            queueToPopulate.Enqueue(CalculateNode(headPoint, direction, pathPartLength));
+
+            var point = CalculateNode(headPoint, direction, pathPartLength);
+            queueToPopulate.Enqueue(point);
+            //yield return new WaitForSeconds(1);
         }
+        
     }
 
     private Vector2 CalculateNode(Vector2 point, Vector2 direction, float maxLength)
