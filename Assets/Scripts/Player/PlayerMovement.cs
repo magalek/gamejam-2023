@@ -39,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();
+
+        if (Input.GetMouseButtonDown(0)) Swing();
     }
 
     private void Move()
@@ -68,5 +70,27 @@ public class PlayerMovement : MonoBehaviour
             }
             IsMoving = false;
         }
+    }
+
+    private void Swing()
+    {
+        if (!EquipmentController.Instance.Has<SwordItem>()) return;
+
+        Collider2D[] collidersBuffer = new Collider2D[20];
+        
+        var sword = EquipmentController.Instance.CurrentItem as SwordItem;
+        
+        var amount = Physics2D.OverlapCircleNonAlloc(transform.position, 5, collidersBuffer);
+
+        for (int i = 0; i < amount; i++)
+        {
+            var currentCollider = collidersBuffer[i];
+            if (currentCollider.TryGetComponent(out IHittable hittable))
+            {
+                hittable.TryHit(sword.damage, Origin.Player, AttackType.PlayerMelee, out _);
+            }
+        }
+        
+        EquipmentController.Instance.PutDownItem();
     }
 }

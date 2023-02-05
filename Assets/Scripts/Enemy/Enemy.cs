@@ -39,7 +39,6 @@ public class Enemy : MonoBehaviour, IHittable
         if (origin == Origin.Enemy) return;
 
         if (nonWorkingProjectile != null && nonWorkingProjectile.type == type) return;
-        Debug.Log("hit");
         hit = true;
         Health -= damage;
         if (Health <= 0) Kill();

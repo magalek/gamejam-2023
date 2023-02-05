@@ -7,7 +7,8 @@ public enum AttackType
     Pumpkin,
     Mirabelle,
     EnemyMelee,
-    EnemyRanged
+    EnemyRanged,
+    PlayerMelee
 }
 
 public class Projectile : MonoBehaviour

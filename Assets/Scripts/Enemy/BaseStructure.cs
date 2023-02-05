@@ -1,10 +1,11 @@
 ﻿using System;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BaseStructure : MonoBehaviour, IHittable
 {
-    public event Action<float> Hit;
+    public event Action<float> HealthChanged;
     public event Action Destroyed;
     
     [SerializeField] private float maxHealth;
@@ -32,8 +33,14 @@ public class BaseStructure : MonoBehaviour, IHittable
 
         hit = true;
         Health -= damage;
-        Hit?.Invoke((float)Health/(float)maxHealth);
+        HealthChanged?.Invoke(Health/maxHealth);
         if (Health <= 0) Kill();
+    }
+
+    public void Heal(float hp)
+    {
+        Health = Mathf.Clamp(Health + hp, 0, maxHealth);
+        HealthChanged?.Invoke(Health/maxHealth);
     }
 
     public void Kill()

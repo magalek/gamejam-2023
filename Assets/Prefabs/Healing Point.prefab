@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 5169210288708380150}
   - component: {fileID: 4706423426270223150}
   - component: {fileID: 557866450462657472}
+  - component: {fileID: 1918272613922341666}
   - component: {fileID: 9143255424529091076}
   - component: {fileID: 5553766651286969946}
   m_Layer: 0
-  m_Name: Hazelnut Point
+  m_Name: Healing Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7c080af7b2d9d9e4eb761c8c4f5c61d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db2484804372f714fb547015f27c427b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,6 +104,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &1918272613922341666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287724215945137586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188d9808b0604cf8bcf97e8a05ac12a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsUsed: 0
+  attachPoint: {fileID: 0}
+  healingPower: 50
+  tickCooldown: 3
 --- !u!114 &9143255424529091076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsUsed: 0
-  harvestedItem: {fileID: 11400000, guid: 926014c62ca0a9b40a2fde44be6a3b58, type: 2}
+  harvestedItem: {fileID: 0}
   pickupSoundEffect: {fileID: 5553766651286969946}
 --- !u!82 &5553766651286969946
 AudioSource:

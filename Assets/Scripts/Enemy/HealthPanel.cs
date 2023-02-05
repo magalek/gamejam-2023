@@ -9,11 +9,11 @@ public class HealthPanel : MonoBehaviour
 
     private void Start()
     {
-        BaseStructure.Instance.Hit += OnHit;
+        BaseStructure.Instance.HealthChanged += OnHealthChanged;
         StartCoroutine(HitBarCoroutine());
     }
 
-    private void OnHit(float percent)
+    private void OnHealthChanged(float percent)
     {
         imagePanel.fillAmount = percent;
     }
