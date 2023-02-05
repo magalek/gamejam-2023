@@ -7,6 +7,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer rendererRef;
+
+    [SerializeField] private AudioClip audioClip;
     
     public event Action<Vector2> Moved;
     public event Action StartedMoving;
@@ -88,8 +90,10 @@ public class PlayerMovement : MonoBehaviour
             if (currentCollider.TryGetComponent(out IHittable hittable))
             {
                 hittable.TryHit(sword.damage, Origin.Player, AttackType.PlayerMelee, out _);
+                
             }
         }
+        AudioSource.PlayClipAtPoint(audioClip, transform.position);
         
         EquipmentController.Instance.PutDownItem();
     }
