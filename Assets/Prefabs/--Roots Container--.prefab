@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootCoroutineTime: 3
   maxRoots: 2
-  rootSoundEffect: {fileID: 0}
+  rootSoundEffect: {fileID: 2047628086127940341}
 --- !u!58 &5074752644270780733
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
